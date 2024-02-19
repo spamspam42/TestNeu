@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Friseur</title>
@@ -12,233 +11,232 @@
 
 <main>
 
-  <body>
 
-    <!-- ============================================ -->
-    <!--                 Navigation                   -->
-    <!-- ============================================ -->
+  <!-- ============================================ -->
+  <!--                 Navigation                   -->
+  <!-- ============================================ -->
 
-    <header id="navigation">
-      <div class="container">
-        <!--Nav Logo-->
-        <a href="" class="logo" aria-label="back to home">
-          <img src="/images/Originalfotos/logo.png" alt="logo" width="210" height="29" aria-hidden="true"
-            decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="nav" role="navigation">
-          <!--Mobile Nav Toggle-->
-          <button class="toggle" aria-label="mobile menu toggle">
-            <div class="box" aria-hidden="true">
-              <span class="line line1" aria-hidden="true"></span>
-              <span class="line line2" aria-hidden="true"></span>
-              <span class="line line3" aria-hidden="true"></span>
-            </div>
-          </button>
-          <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-          <div class="ul-wrapper">
-            <ul id="expanded" class="ul" aria-expanded="false">
-              <li class="li">
-                <a href="/index.html" class="li-link">
-                  Home
-                </a>
-              </li>
-              <!--Copy and paste this dropdown list item and replace any .li with this dropdown group to make a new dropdown and it will work-->
-              <li class="li dropdown" tabindex="0">
-                <span class="li-link">
-                  Leistungen
-                  <img class="drop-icon" src="/icons/chev-down.svg" alt="dropdown icon" width="15" height="15"
-                    decoding="async" aria-hidden="true">
-                </span>
-                <ul class="drop-ul">
-                  <li class="drop-li">
-                    <a href="/leistungen.html" class="li-link drop-link"><b>Monatliche Pakete
-                      </b><br>ab
-                      30€/Monat</a>
-                  </li>
-                  <li class="drop-li">
-                    <a href="/leistungen.html#pricing-357" class="li-link drop-link"><b>Websiten zum Festpreis
-                      </b><br>ab
-                      1500€</a>
-                  </li>
-                  <li class="drop-li">
-                    <a href="/kontakt.html" class="li-link drop-link">Freelancing für Webagenturen</a>
-                  </li>
-
-                </ul>
-              </li>
-              <li class="li">
-                <a href="unterTeam.html" class="li-link">
-                  Unser Team
-                </a>
-              </li>
-
-
-            </ul>
+  <header id="navigation">
+    <div class="container">
+      <!--Nav Logo-->
+      <a href="" class="logo" aria-label="back to home">
+        <img src="/images/Originalfotos/logo.png" alt="logo" width="210" height="29" aria-hidden="true"
+          decoding="async">
+      </a>
+      <!--Navigation List-->
+      <nav class="nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="toggle" aria-label="mobile menu toggle">
+          <div class="box" aria-hidden="true">
+            <span class="line line1" aria-hidden="true"></span>
+            <span class="line line2" aria-hidden="true"></span>
+            <span class="line line3" aria-hidden="true"></span>
           </div>
-        </nav>
-        <a href="/kontakt.html" class="button-solid nav-button">Kontakt</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="ul-wrapper">
+          <ul id="expanded" class="ul" aria-expanded="false">
+            <li class="li">
+              <a href="/index.html" class="li-link">
+                Home
+              </a>
+            </li>
+            <!--Copy and paste this dropdown list item and replace any .li with this dropdown group to make a new dropdown and it will work-->
+            <li class="li dropdown" tabindex="0">
+              <span class="li-link">
+                Leistungen
+                <img class="drop-icon" src="/icons/chev-down.svg" alt="dropdown icon" width="15" height="15"
+                  decoding="async" aria-hidden="true">
+              </span>
+              <ul class="drop-ul">
+                <li class="drop-li">
+                  <a href="/leistungen.html" class="li-link drop-link"><b>Monatliche Pakete
+                    </b><br>ab
+                    30€/Monat</a>
+                </li>
+                <li class="drop-li">
+                  <a href="/leistungen.html#pricing-357" class="li-link drop-link"><b>Websiten zum Festpreis
+                    </b><br>ab
+                    1500€</a>
+                </li>
+                <li class="drop-li">
+                  <a href="/kontakt.html" class="li-link drop-link">Freelancing für Webagenturen</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="li">
+              <a href="unterTeam.html" class="li-link">
+                Unser Team
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </nav>
+      <a href="/kontakt.html" class="button-solid nav-button">Kontakt</a>
+      <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+      <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
           <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
           <img class="sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
       </button> -->
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!--                 Impressum                   -->
+  <!-- ============================================ -->
+
+  <section id="bb-contact-490">
+    <div class="bb-container">
+      <!-- Contact Info -->
+      <div class="bb-content">
+
+
+        <!--Address-->
+        <span class="bb-header">Addresse</span>
+        <a href="" class="bb-link">
+          Rosenallee 1 <br>46487, Wesel<br> Nordrhein-Westfalen
+        </a>
+        <!--Email-->
+        <span class="bb-header">Email</span>
+        <a href="mailto:priebe-richard@web.de" class="bb-link">priebe-richard@web.de</a>
+        <!--Phone-->
+        <span class="bb-header">Phone</span>
+        <a href="tel:+4917662648285" class="bb-link">+49 176 626 482 85</a>
+
+
+
+
       </div>
-    </header>
+      <div id="angaben">
+        <span class="bb-header">DATENSCHUTZ <br><br><br><br>Verantwortliche Stelle
+        </span>
+        <p>
+          bitte-ein-byte<br>
+          Rosenallee 1, 46487 Wesel<br>
+        </p>
 
-    <!-- ============================================ -->
-    <!--                 Impressum                   -->
-    <!-- ============================================ -->
+        <span class="bb-header">Arten der verarbeiteten Daten
+        </span>
+        <p>
+          a. Kontaktinformationen: Bei Nutzung der bereitgestellten Kontaktformulare oder E-Mail-Adressen
+          können Ihre Angaben gespeichert werden.<br>
 
-    <section id="bb-contact-490">
-      <div class="bb-container">
-        <!-- Contact Info -->
-        <div class="bb-content">
+          b. Logdateien: Bei jedem Zugriff auf unsere Website werden Nutzungsdaten durch den
+          Internetbrowser übermittelt und in Protokolldateien (Server-Logfiles) gespeichert. Eine Nutzung dieser
+          Internetseite ist trotzem ohne Cookies möglich!
+        </p>
 
+        <span class="bb-header">Hosting
+        </span>
+        <p>
+          Unsere Website wird über Netlify gehostet. Die Datenverarbeitung auf dieser Plattform erfolgt
+          gemäß den Datenschutzrichtlinien von Netlify.
+        </p>
 
-          <!--Address-->
-          <span class="bb-header">Addresse</span>
-          <a href="" class="bb-link">
-            Rosenallee 1 <br>46487, Wesel<br> Nordrhein-Westfalen
-          </a>
-          <!--Email-->
-          <span class="bb-header">Email</span>
-          <a href="mailto:priebe-richard@web.de" class="bb-link">priebe-richard@web.de</a>
-          <!--Phone-->
-          <span class="bb-header">Phone</span>
-          <a href="tel:+4917662648285" class="bb-link">+49 176 626 482 85</a>
+        <span class="bb-header">Ihre Rechte
+        </span>
+        <p>
+          Sie haben das Recht auf Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten, auf
+          Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit.
+        </p>
 
+        <span class="bb-header">Aktualisierung der Datenschutzerklärung
+        </span>
+        <p>
+          Wir behalten uns das Recht vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Die
+          jeweils aktuelle Version ist auf unserer Website verfügbar.
+        </p>
 
-
-
-        </div>
-        <div id="angaben">
-          <span class="bb-header">DATENSCHUTZ <br><br><br><br>Verantwortliche Stelle
-          </span>
-          <p>
-            bitte-ein-byte<br>
-            Rosenallee 1, 46487 Wesel<br>
-          </p>
-
-          <span class="bb-header">Arten der verarbeiteten Daten
-          </span>
-          <p>
-            a. Kontaktinformationen: Bei Nutzung der bereitgestellten Kontaktformulare oder E-Mail-Adressen
-            können Ihre Angaben gespeichert werden.<br>
-
-            b. Logdateien: Bei jedem Zugriff auf unsere Website werden Nutzungsdaten durch den
-            Internetbrowser übermittelt und in Protokolldateien (Server-Logfiles) gespeichert. Eine Nutzung dieser
-            Internetseite ist trotzem ohne Cookies möglich!
-          </p>
-
-          <span class="bb-header">Hosting
-          </span>
-          <p>
-            Unsere Website wird über Netlify gehostet. Die Datenverarbeitung auf dieser Plattform erfolgt
-            gemäß den Datenschutzrichtlinien von Netlify.
-          </p>
-
-          <span class="bb-header">Ihre Rechte
-          </span>
-          <p>
-            Sie haben das Recht auf Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten, auf
-            Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit.
-          </p>
-
-          <span class="bb-header">Aktualisierung der Datenschutzerklärung
-          </span>
-          <p>
-            Wir behalten uns das Recht vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Die
-            jeweils aktuelle Version ist auf unserer Website verfügbar.
-          </p>
-
-          <p>
-            Diese Website betreibt keine aktiven Cookies oder Tracking-Technologien, wodurch ein
-            Cookiebanner und aktive Zustimmungsklicks nicht erforderlich sind. Bei weiteren Fragen zum
-            Datenschutz stehen wir Ihnen gerne zur Verfügung.
-          </p>
+        <p>
+          Diese Website betreibt keine aktiven Cookies oder Tracking-Technologien, wodurch ein
+          Cookiebanner und aktive Zustimmungsklicks nicht erforderlich sind. Bei weiteren Fragen zum
+          Datenschutz stehen wir Ihnen gerne zur Verfügung.
+        </p>
 
 
-          <span class="bb-header">Verantwortlich für den Inhalt:
-          </span>
-          <p>
-            Richard Priebe
-          </p>
+        <span class="bb-header">Verantwortlich für den Inhalt:
+        </span>
+        <p>
+          Richard Priebe
+        </p>
 
-          <span class="bb-header">Kontakt:
-          </span>
-          <p>Telefon: +49 176 626 482 85<br>
-            E-Mail: priebe.richard1@gmail.com
-          </p>
+        <span class="bb-header">Kontakt:
+        </span>
+        <p>Telefon: +49 176 626 482 85<br>
+          E-Mail: priebe.richard1@gmail.com
+        </p>
 
-          <span class="bb-header">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
-          </span>
-          <p>DE 45 380 691 125
-          </p>
+        <span class="bb-header">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
+        </span>
+        <p>DE 45 380 691 125
+        </p>
 
 
 
-          <span class="bb-header">Haftung für Inhalte:
-          </span>
-          <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
-            allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch
-            nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
-            Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br><br>
-            Wir weisen darauf hin, dass sämtliche Inhalte dieser Website im Hinblick auf
-            datenschutzrechtliche Bestimmungen sachgemäß überprüft wurden. Sollten dennoch Fehler oder
-            Verstöße festgestellt werden, bitten wir um unverzügliche Benachrichtigung. Wir sind bestrebt,
-            etwaige Beanstandungen schnellstmöglich zu prüfen und entsprechende Maßnahmen zu ergreifen.</p>
+        <span class="bb-header">Haftung für Inhalte:
+        </span>
+        <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+          allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch
+          nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+          Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br><br>
+          Wir weisen darauf hin, dass sämtliche Inhalte dieser Website im Hinblick auf
+          datenschutzrechtliche Bestimmungen sachgemäß überprüft wurden. Sollten dennoch Fehler oder
+          Verstöße festgestellt werden, bitten wir um unverzügliche Benachrichtigung. Wir sind bestrebt,
+          etwaige Beanstandungen schnellstmöglich zu prüfen und entsprechende Maßnahmen zu ergreifen.</p>
 
 
-          <span class="bb-header">Haftung für Links:
-          </span>
-          <p>Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss
-            haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-            Seiten verantwortlich. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-          </p>
+        <span class="bb-header">Haftung für Links:
+        </span>
+        <p>Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss
+          haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+          Seiten verantwortlich. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+        </p>
 
 
-          <span class="bb-header">Urheberrecht:
-          </span>
-          <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
-            deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-            Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des
-            jeweiligen Autors bzw. Erstellers.
-          </p>
+        <span class="bb-header">Urheberrecht:
+        </span>
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+          deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+          Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des
+          jeweiligen Autors bzw. Erstellers.
+        </p>
 
-          <span class="bb-header">Quellenangaben für die verwendeten Bilder und Grafiken:
-          </span>
-          <p>Cleanpng.com: Discover transparent background images and illustrations. Best quality, free
-            unlimited download.
-            Pexels.com: Free stock photos & videos you can use everywhere. Browse millions of high-quality
-            royalty free stock images & copyright free pictures.
-          </p>
+        <span class="bb-header">Quellenangaben für die verwendeten Bilder und Grafiken:
+        </span>
+        <p>Cleanpng.com: Discover transparent background images and illustrations. Best quality, free
+          unlimited download.
+          Pexels.com: Free stock photos & videos you can use everywhere. Browse millions of high-quality
+          royalty free stock images & copyright free pictures.
+        </p>
 
-          <span class="bb-header">Online-Streitbeilegung (OS):
-          </span>
-          <p>Wir weisen darauf hin, dass wir nicht bereit und nicht verpflichtet sind, an
-            Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Eine Teilnahme
-            an der Online-Streitbeilegung (OS) erfolgt auf freiwilliger Basis. Unsere E-Mail-Adresse für
-            jegliche Korrespondenz im Zusammenhang mit rechtlichen Angelegenheiten finden Sie im Impressum.
-          </p>
+        <span class="bb-header">Online-Streitbeilegung (OS):
+        </span>
+        <p>Wir weisen darauf hin, dass wir nicht bereit und nicht verpflichtet sind, an
+          Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Eine Teilnahme
+          an der Online-Streitbeilegung (OS) erfolgt auf freiwilliger Basis. Unsere E-Mail-Adresse für
+          jegliche Korrespondenz im Zusammenhang mit rechtlichen Angelegenheiten finden Sie im Impressum.
+        </p>
 
-          <span class="bb-header">Datenschutz:
-          </span>
-          <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit
-            auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen)
-            erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.</p>
-
-
-
-          <p>bitte-ein-byte --
-            Wesel, 22.01.2024
-          </p>
+        <span class="bb-header">Datenschutz:
+        </span>
+        <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit
+          auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen)
+          erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.</p>
 
 
 
-        </div>
+        <p>bitte-ein-byte --
+          Wesel, 22.01.2024
+        </p>
+
+
+
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
@@ -299,28 +297,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-<script src="script.js"></script>
-  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-<script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+  charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"dark","language":"de","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"testtest-kannweg"});
-});
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({ "notice_banner_type": "interstitial", "consent_type": "express", "palette": "dark", "language": "de", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "bitte-ein-byte" });
+  });
 </script>
 
 <!-- Google Analytics -->
 <!-- Google tag (gtag.js) -->
-<script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-TSV3SMWLSM"></script>
+<script type="text/plain" data-cookie-consent="tracking" async
+  src="https://www.googletagmanager.com/gtag/js?id=G-TSV3SMWLSM"></script>
 <script type="text/plain" data-cookie-consent="tracking">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -341,6 +330,8 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 
 <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
+
+<script src="script.js"></script>
 
 </body>
 
