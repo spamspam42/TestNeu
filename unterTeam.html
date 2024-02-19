@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friseur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="allg.css">
+</head>
+
+<main>
+
+  <body>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="navigation">
+      <div class="container">
+        <!--Nav Logo-->
+        <a href="" class="logo" aria-label="back to home">
+          <img src="/images/Originalfotos/logo.png" alt="logo" width="210" height="29" aria-hidden="true"
+            decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="toggle" aria-label="mobile menu toggle">
+            <div class="box" aria-hidden="true">
+              <span class="line line1" aria-hidden="true"></span>
+              <span class="line line2" aria-hidden="true"></span>
+              <span class="line line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="ul-wrapper">
+            <ul id="expanded" class="ul" aria-expanded="false">
+              <li class="li">
+                <a href="/index.html" class="li-link">
+                  Home
+                </a>
+              </li>
+              <!--Copy and paste this dropdown list item and replace any .li with this dropdown group to make a new dropdown and it will work-->
+              <li class="li dropdown" tabindex="0">
+                <span class="li-link">
+                  Leistungen
+                  <img class="drop-icon" src="/icons/chev-down.svg" alt="dropdown icon" width="15" height="15"
+                    decoding="async" aria-hidden="true">
+                </span>
+                <ul class="drop-ul">
+                  <li class="drop-li">
+                    <a href="/leistungen.html" class="li-link drop-link"><b>Monatliche Pakete
+                      </b><br>ab
+                      30€/Monat</a>
+                  </li>
+                  <li class="drop-li">
+                    <a href="/leistungen.html#pricing-357" class="li-link drop-link"><b>Websiten zum Festpreis
+                      </b><br>ab
+                      1500€</a>
+                  </li>
+                  <li class="drop-li">
+                    <a href="/kontakt.html" class="li-link drop-link">Freelancing für Webagenturen</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="li">
+                <a href="unterTeam.html" class="li-link active">
+                  Unser Team
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </nav>
+        <a href="/kontakt.html" class="button-solid nav-button">Kontakt</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+          <img class="sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+      </button> -->
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                  Leistungen                    -->
+    <!-- ============================================ -->
+
+    <section id="services-unserTeam">
+      <div class="container">
+        <div class="content">
+          <span class="topper">Unsere Arbeitsphilosophie</span>
+          <h2 class="title">Internetseiten mal anders gedacht
+
+          </h2>
+          <p class="text">
+            Kundenzufriedenheit ist von entscheidender Bedeutung für den Fortschritt aller Beteiligten!<br>Durch ein
+            ansprechendes Design Ihrer Internetseite können wir sicherstellen, dass Ihre Kunden zufrieden sind, was
+            wiederum Ihre Zufriedenheit und folglich auch unsere erhöht! Unser Fokus liegt nicht auf kurzfristigen
+            Gewinnen, sondern vielmehr auf dem Aufbau langfristiger Kundenbeziehungen, die in jeder Hinsicht von
+            Bedeutung sind. Gemeinsam können wir die Zusammenarbeit auf eine neue, lukrative und persönliche Ebene heben
+            und dabei stets die notwendige Professionalität wahren, um sowohl Freude als auch Erfolg im Geschäftsalltag
+            zu gewährleisten!
+            <br>
+            Wir sind mehr als nur eine Plattform - wir sind Ihr Partner für den Erfolg im digitalen Raum.
+
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1125">
+      <div class="container">
+        <!-- Left Image Sectionbutton-solid -->
+        <div class="image-group">
+          <!--Main Image-->
+          <picture class="picture picture1">
+            <img loading="lazy" decoding="async" src="/images/profile-pic.png" alt="Geschäftsführer: Richard Priebe"
+              title="Ihr Ansprechpartner: Richard Priebe" width="657" height="676" aria-hidden="true">
+          </picture>
+          <!--Circle Graphic-->
+          <img class="graphic" loading="lazy" decoding="async" src="/images/circle-shape.svg" alt="graphic" width="641"
+            height="660" aria-hidden="true">
+        </div>
+        <!-- Right Content Section-->
+        <div class="content">
+          <span class="topper">Ihr Ansprechpartner</span>
+          <h2 class="title">Richard Priebe</h2>
+          <p class="text">
+            Hallo!<br><br>
+
+            Als Freelancer im Bereich Webentwicklung ziehe ich ein breites Netzwerk von Designern,
+            Fotografen und anderen Kreativprofis heran, um meinen Kunden ein umfassendes Leistungspaket
+            anzubieten.<br><br>
+            Diese langen beruflichen Partnerschaften ermöglichen es mir, meinen Kunden nicht nur hochwertige
+            Webentwicklung
+            anzubieten, sondern auch erstklassiges Design und beeindruckende visuelle Inhalte zu liefern.
+            <br><br>
+            Ob es sich um Produktfotos, Unternehmensporträts oder atmosphärische
+            Bilder
+            handelt - ich habe die richtigen Partner oder auch Lizenzen nötiger Plattformen parat, um Ihre Anforderungen
+            zu
+            erfüllen, sofern gewünscht.
+            <br><br>
+
+            Ich bin überzeugt von langfristigen Partnerschaften und freue mich darauf Sie persönlich und Ihr
+            Unternehmen in
+            gemeinsamer Zusammenarbeit kennenzulernen und zusammen flexibel auf die sich ständig ändernden
+            Anforderungen des Internets einzugehen.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1173">
+      <div class="container">
+        <div class="content">
+          <span class="topper">Der Arbeitsauftrag</span>
+          <h2 class="title">Startklar: Wie geht's los?</h2>
+          <p class="text">
+            Ihr Vertrauen ist wichtig: mit professioneller Expertise und klaren Richtlinien zum
+            gemeinsamen Erfolg.<br>
+            Hier ein grobe Übersicht für gemeinsame Projekte. Gerne legen wir gemeinsam im
+            Erstkontakt weitere Ziele oder Beratungstermine fest.
+          </p>
+        </div>
+        <ul class="card-group">
+          <li class="item">
+            <picture class="picture">
+              <img class="icon" src="/images/lightbulb-exclamation-alt-svgrepo-com.svg" alt="icon" width="40"
+                height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <h3 class="h3">Kennenlernphase</h3>
+            <p class="item-text">
+              Durch einen individuell gestalteten Fragebogen und zusätzlichem Austausch von ggf.
+              vorliegenden Designs (Logo, Fotos, Farbschemata etc.) erarbeiten wir Ihnen einen ersten
+              Lösungsvorschlag.
+            </p>
+          </li>
+          <li class="item">
+            <picture class="picture">
+              <img class="icon" src="/images/halloween-calendar-alt-svgrepo-com.svg" alt="icon" width="40" height="40"
+                loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <h3 class="h3">Finale Abstimmungsphase</h3>
+            <p class="item-text">
+              Sie wollen doch andere Fotos, Texte oder haben in Zwischenzeit z. B. ein zuätzliches
+              Logo
+              erstellen lassen? <br> Änderungen der Texte, Fotos auf Ihrer Website sind im Monatspaket unbegrenzt
+              möglich!
+            </p>
+          </li>
+          <li class="item">
+            <picture class="picture">
+              <img class="icon" src="/images/gear-svgrepo-com.svg" alt="icon" width="40" height="40" loading="lazy"
+                decoding="async" aria-hidden="true">
+            </picture>
+            <h3 class="h3">Regelmäßige Wartung</h3>
+            <p class="item-text">
+              Nach Fertigstellung des Design übernehmen wir die Hintergrundarbeiten für das
+              Onlinestellen
+              und Warten Ihrer Internetpräsenz und das zum Fixpreis, ohne versteckte Kosten!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Einblick                  -->
+    <!-- ============================================ -->
+
+    <section id="einblick-unserTeam">
+      <div class="container">
+        <div class="content">
+          <div class="flex-group">
+            <span class="topper">ein kleiner Einblick in unser Portfolio</span>
+            <h2 class="title">Beispielseiten vorgestellt</h2>
+          </div>
+          <p class="text">
+            Lassen Sie sich von unseren Beispielseiten inspirieren und entdecken Sie, wie wir maßgeschneiderte Lösungen
+            entwickeln, die den individuellen Anforderungen und Zielen unserer Kunden gerecht werden. Die aufgelisteten
+            Seiten wurden nach Absprache anonymisiert und in Ihrer Funktion beschränkt.
+          </p>
+        </div>
+        <ul class="card-group">
+          <li class="item">
+            <a href="/Beispielseiten/Garten-Landschaft/imdex.html" target="_blank" class="link">
+              <span class="number">01</span>
+              <h3 class="h3">Gartenlandschaftsbau</h3>
+              <p class="item-text">
+                Nach Integration konnte der Kunde innerhalb des
+                ersten Jahres zusätzliche Anfragen
+                verbuchen. Dies führte dazu, dass dieser
+                einen weiteren Mitarbeiter & Azubi einstellte, um seine erhöhte Auftragslage (vor allem im Bereich der
+                Großkunden) zu
+                bedienen.
+                <br><br><b>Hier Klicken zum Anzeigen der Beispielseite</b>
+              </p>
+            </a>
+            <picture class="picture">
+              <source media="(max-width: 600px)" srcset="/images/Originalfotos/downscale/webp/gala.webp">
+              <source media="(min-width: 601px)" srcset="/images/Originalfotos/downscale/webp/gala.webp">
+              <img decoding="async" src="/images/Originalfotos/downscale/webp/gala.webp" alt="finance" width="413"
+                height="374" aria-hidden="true">
+            </picture>
+          </li>
+          <li class="item">
+            <a href="/Beispielseiten/Friseur/index.html" target="_blank" class="link">
+              <span class="number">02</span>
+              <h3 class="h3">Friseur</h3>
+              <p class="item-text">
+                Durch Integration der Website kommen interessierte Kunden
+                bereits informiert in
+                den Friseurladen, ohne ständiges Nachfragen zu den angebotenen Produkten und Preisen. Durch die
+                wenigeren Unterbrechungen können nun mehrere Kunden am Tag bedient werden.<br><br><b>Hier Klicken zum
+                  Anzeigen der Beispielseite</b>
+              </p>
+            </a>
+            <picture class="picture">
+              <source media="(max-width: 600px)" srcset="/images/Originalfotos/downscale/webp/frise.webp">
+              <source media="(min-width: 601px)" srcset="/images/Originalfotos/downscale/webp/frise.webp">
+              <img decoding="async" src="/images/Originalfotos/downscale/webp/frise.webp" alt="finance" width="413"
+                height="374" aria-hidden="true">
+            </picture>
+          </li>
+          <li class="item">
+            <a href="" class="link">
+              <span class="number">03</span>
+              <h3 class="h3">Steuerberatung</h3>
+              <p class="item-text">
+                Dieser Kunde erkannte ein Defizit der Onlinepräsenzen seiner Branche in der Umgebung. Im
+                Erstgespräch wurde ein
+                Logodesign und die komplette Überholung des Unternehmensauftritts in den Sozialen-Medien vereinbart, so
+                ist
+                nun ein
+                Erstkontakt zu pot. Kunden einfacherer.
+                <br><br><b>Hier Klicken zum Anzeigen der Beispielseite</b>
+              </p>
+            </a>
+            <picture class="picture">
+              <source media="(max-width: 600px)" srcset="/images/Originalfotos/downscale/webp/finance-laptop.webp">
+              <source media="(min-width: 601px)" srcset="/images/Originalfotos/downscale/webp/finance-laptop.webp">
+              <img decoding="async" src="/images/Originalfotos/downscale/webp/finance-laptop.webp" alt="finance"
+                width="413" height="374" aria-hidden="true">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+</main>
+
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<section id="footer-1390">
+  <div class="container">
+    <div class="top">
+      <a aria-label="go back to home" class="logo" href="">
+        <img class="logo-img" loading="lazy" decoding="async" src="/images/Originalfotos/logo-hell.png" alt="logo"
+          width="209" height="40">
+      </a>
+      <ul class="ul">
+        <li class="li">
+          <a href="/index.html" class="link">Home</a>
+        </li>
+        <li class="li">
+          <a href="/unterTeam.html" class="link">Unser Team</a>
+        </li>
+        <li class="li">
+          <a href="/leistungen.html" class="link">Leistungen</a>
+        <li class="li">
+          <a href="/kontakt.html" class="link">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <!--Social-->
+      <ul class="social">
+
+
+        <li class="social-li">
+          <a href="" class="social-link" aria-label="instagram" target="_blank" rel="noopener">
+            <img class="social-icon default" src="/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async"
+              width="12" height="12" aria-hidden="true">
+          </a>
+        </li>
+
+      </ul>
+      <span class="copyright">
+        © Copyright 2024 - <a href="" class="copyright-link">bitte-ein-byte</a>
+      </span>
+      <div class="flex">
+        <a href="/impressum.html" class="copyright-link">Impressum</a>
+        <span class="separater">|</span>
+        <a href="/impressum.html" class="copyright-link">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

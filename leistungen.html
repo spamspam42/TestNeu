@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friseur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="allg.css">
+</head>
+
+<main>
+
+  <body>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="navigation">
+      <div class="container">
+        <!--Nav Logo-->
+        <a href="" class="logo" aria-label="back to home">
+          <img src="/images/Originalfotos/logo.png" alt="logo" width="210" height="29" aria-hidden="true"
+            decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="toggle" aria-label="mobile menu toggle">
+            <div class="box" aria-hidden="true">
+              <span class="line line1" aria-hidden="true"></span>
+              <span class="line line2" aria-hidden="true"></span>
+              <span class="line line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="ul-wrapper">
+            <ul id="expanded" class="ul" aria-expanded="false">
+              <li class="li">
+                <a href="/index.html" class="li-link">
+                  Home
+                </a>
+              </li>
+              <!--Copy and paste this dropdown list item and replace any .li with this dropdown group to make a new dropdown and it will work-->
+              <li class="li dropdown" tabindex="0">
+                <span class="li-link active">
+                  Leistungen
+                  <img class="drop-icon" src="/icons/chev-down.svg" alt="dropdown icon" width="15" height="15"
+                    decoding="async" aria-hidden="true">
+                </span>
+                <ul class="drop-ul">
+                  <li class="drop-li">
+                    <a href="/leistungen.html" class="li-link drop-link"><b>Monatliche Pakete
+                      </b><br>ab
+                      30€/Monat</a>
+                  </li>
+                  <li class="drop-li">
+                    <a href="/leistungen.html#pricing-357" class="li-link drop-link"><b>Websiten zum Festpreis
+                      </b><br>ab
+                      1500€</a>
+                  </li>
+                  <li class="drop-li">
+                    <a href="/kontakt.html" class="li-link drop-link">Freelancing für Webagenturen</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="li">
+                <a href="unterTeam.html" class="li-link">
+                  Unser Team
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </nav>
+        <a href="/kontakt.html" class="button-solid nav-button">Kontakt</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+          <img class="sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+      </button> -->
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--       Transparente Preise                    -->
+    <!-- ============================================ -->
+
+    <section id="services-Leistungen">
+      <div class="container">
+        <div class="content">
+          <span class="topper">transparente Preise</span>
+          <h2 class="title">Unsere Monatspakete</h2>
+
+          <ul id="list-1075" class="ul">
+            <li class="li">
+              <img class="icon" aria-hidden="true" src="/icons/deal-shake-flaticons.png" decoding="async" alt="icon"
+                width="48" height="48" loading="lazy">
+              <div class="flex">
+                <h3 class="h3">50€/Monat - 12 Monate Mindestlaufzeit</h3>
+                <p class="li-text">
+                  Ideal für Starter im Unternehmertum oder erste Probieranläufe, um die Vorteile einer modernen
+                  Internetwebsite auszutesten.
+                </p>
+              </div>
+            </li>
+            <li class="li">
+              <img class="icon" aria-hidden="true" src="/icons/deal-flaticon.png" decoding="async" alt="icon" width="48"
+                height="48" loading="lazy">
+              <div class="flex">
+                <h3 class="h3">30€/Monat - 60 Monate Mindestlaufzeit</h3>
+                <p class="li-text">
+                  Bestes Preis-Leistungs-Verhältnis für Ihre Internetpräsenz im Vergleich zu Websitebaukästen. <br>Nie
+                  wieder
+                  selbständig eine Internetseite erstellen oder aktualisieren!
+
+
+                </p>
+              </div>
+            </li>
+          </ul>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-1333">
+      <div class="container">
+        <div class="content">
+          <span class="topper right">Monatliche Pakete</span>
+          <h2 class="title">
+            Vertragliche Bestandteile</h2>
+          <ul class="faq-group">
+            <!-- Active class added as default -->
+            <li class="faq-item active">
+              <button class="button">
+                <span class="button-text">
+                  Garantierte Leistungen
+                </span>
+              </button>
+
+
+              <ul class="item-p">
+                <li class="padding">
+                  5 statische Internet-/Subseiten ("Über uns", "Kontakt" etc.)
+                </li>
+                <li class="padding">
+                  Responsive Layout (Mobiltelefone, Tablet und Desktop)
+                </li>
+                <li class="padding">
+                  Unbegrenzte Änderungen während der Abo-Laufzeit
+                </li>
+                <li class="padding">
+                  Design nach unserem UI-/UX-Standard
+                </li>
+                <li class="padding">
+                  Aktuelle Suchmaschinenstandards
+                </li>
+                <li class="padding">
+                  Blitzschnelle Ladezeiten nach Google-Analytics-Score
+                </li>
+                <li class="padding">
+                  Social Media Integration
+                </li>
+                <li class="padding">
+                  Auf Wunsch auch mit Impressum und Datenschutz
+                </li>
+
+              </ul>
+            </li>
+            <li class="faq-item">
+              <button class="button">
+                <span class="button-text">
+                  Webdesign und Entwicklung
+                </span>
+              </button>
+              <p class="item-p">
+                Wir gewährleisten Performance für eine reibungslose Nutzung Ihrer Website. Keine KI oder
+                Website-Baukasten, wir leisten echte Entwicklungsarbeit. Im Designprozess der Website werden Sie,
+                sofern gewünscht, aktiv eingebunden und können Ihre Wünsche und Inhalte äußern.
+              </p>
+            </li>
+            <li class="faq-item">
+              <button class="button">
+                <span class="button-text">
+                  Bearbeitungsmöglichkeiten
+                </span>
+              </button>
+              <p class="item-p">
+                Während des Design- & Entwicklungsprozesses können jegliche Änderungen von Ihnen angesprochen werden.
+                Nach Fertigstellung haben Sie durch Mail- und/oder Telefonkontakt ständig die Möglichkeit, Texte und
+                Fotos auf der Internetseite zu ändern.
+              </p>
+            </li>
+            <li class="faq-item">
+              <button class="button">
+                <span class="button-text">
+                  Kundenservice
+                </span>
+              </button>
+              <p class="item-p">
+
+                Wir versprechen 24/7 Kundenservice.
+                Sie erhalten innerhalb von 24 Stunden einen Rückruf. Kein Werbeversprechen, sondern ein fester
+                Vertragsbestandteil.
+              </p>
+            </li>
+            <li class="faq-item">
+              <button class="button">
+                <span class="button-text">
+                  Hosting und Wartung
+                </span>
+              </button>
+              <p class="item-p">
+                Nach Fertigstellung des Designs übernehmen wir die Hintergrundarbeiten für das Online-Stellen und Warten
+                Ihrer Internetpräsenz und das zum Fixpreis, ohne versteckte Kosten!
+              </p>
+            </li>
+            <li class="faq-item">
+              <button class="button">
+                <span class="button-text">
+                  Weitere Google-Services
+                </span>
+              </button>
+              <p class="item-p">
+                Wir sind auf sämtliche Google-Analytics-Prozesse spezialisiert:<br>Mit präzisen Google-Analytics-Daten
+                können Sie gezielte Verbesserungen vornehmen und Ihren Online-Erfolg nachhaltig steigern. Ihre
+                Internetseite wird für die neuesten Suchmaschinenstandards entwickelt.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!--Form-->
+        <form class="form" id="form-1333" name="Monatliche-Pakete" method="post" netlify>
+          <div class="content">
+            <span class="topper">Monatliche Pakete</span>
+            <h2 class="title">Unverbindlich Anfragen</h2>
+          </div>
+          <div class="padding">
+            <input type="checkbox" id="MonatlicheLösung" name="MonatlicheLösung" value="MonatlicheLösung" />
+            <label for="MonatlicheLösung">50€/Monat - 12 Monate Mindestlaufzeit</label>
+          </div>
+          <div class="padding">
+            <input type="checkbox" id="InternetseiteKaufen" name="InternetseiteKaufen" value="InternetseiteKaufen" />
+            <label for="InternetseiteKaufen">30€/Monat - 60 Monate Mindestlaufzeit</label>
+          </div>
+
+          <label class="label">
+            Name
+            <input class="input" required type="text" id="name-1333" name="name" placeholder="Name">
+          </label>
+          <label class="label">
+            Unternehmen
+            <input class="input" required type="text" id="unternehmen-name-1333" name="name"
+              placeholder="Unternehmensname">
+          </label>
+          <label class="label email">
+            Email
+            <input class="input" required type="email" id="email-1333" name="email" placeholder="email@beispiel.com">
+          </label>
+          <label class="label phone">
+            Telefon
+            <input class="input" required type="number" id="phone-1333" name="phone" placeholder="+49 01234 56789">
+          </label>
+          <label class="label">
+            Nachricht
+            <textarea class="input textarea" required name="Message" id="message-1333"
+              placeholder="Hallo, ich möchte ein Monatspaket für 50€/Monat buchen..."></textarea>
+          </label>
+          <button class="button-solid submit" type="submit">Informationen anfordern</button>
+
+
+
+        </form>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-357">
+      <div class="container">
+        <div class="content">
+          <span class="topper">Einmaliger Service zum einmaligen Preis</span>
+          <h2 class="title">Websiten zum Fixpreis</h2>
+          <p class="text">
+            Benötigen Sie nur eine Modernisierung Ihrer aktuellen Internetstruktur oder möchten die fertige Seite
+            selbständig verwalten und warten?<br><br>Kontaktieren Sie
+            uns gerne für eine individuelle Kostenauflistung.
+
+          </p>
+        </div>
+        <ul class="card-group">
+          <!-- Option 1 -->
+          <li class="item">
+            <h3 class="h3">Starter</h3>
+            <p class="item-text">
+              Eine perfekte Landingpage: klar & ansprechend
+            </p>
+            <div class="option-group">
+              <span class="price">1500€<span class="small"></span></span>
+            </div>
+            <span class="included">Paket beeinhaltet</span>
+            <ul class="ul">
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Eine individuelle Homepageseite
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Social Media Integration
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                E-Mail Kontaktformular
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Überarbeitung des Firmendesigns
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Marketing-Fotograf ohne Zusatzkosten
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Definition individueller Ziele
+              </li>
+            </ul>
+            <a href="/kontakt.html" class="button-solid">Jetzt anfragen!</a>
+          </li>
+          <!-- Option 2 -->
+          <li class="item popular">
+            <h3 class="h3">Kleinunternehmen</h3>
+            <p class="item-text">
+              5-Seitige Internetpräsenz (Kontakt, Über uns, ...)
+            </p>
+            <div class="option-group">
+              <span class="price">3000€<span class="small"></span></span>
+            </div>
+            <span class="included">Paket beeinhaltet</span>
+            <ul class="ul">
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                5 individuelle Homepageseiten
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Social Media Integration
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                E-Mail Kontaktformular
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Überarbeitung des Firmendesigns
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Marketing-Fotograf ohne Zusatzkosten
+              </li>
+              <li class="li disabled">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Definition individueller Ziele
+              </li>
+            </ul>
+            <a href="/kontakt.html" class="button-solid">Jetzt anfragen!</a>
+          </li>
+          <!-- Option 3 -->
+          <li class="item">
+            <h3 class="h3">Unternehmensauftritt</h3>
+            <p class="item-text">
+              Vollständiges Marketingkonzept
+            </p>
+            <div class="option-group">
+              <span class="price">ab 5.000€<span class="small"></span></span>
+            </div>
+            <span class="included">Paket beeinhaltet</span>
+            <ul class="ul">
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Unbegr. Homepageseiten
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Social Media Integration
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                E-Mail Kontaktformular
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Überarbeitung des Firmendesigns
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Marketing-Fotograf ohne Zusatzkosten
+              </li>
+              <li class="li">
+                <img class="li-img" aria-hidden="true" loading="lazy" decoding="async" src="/icons/check-blue.svg"
+                  alt="code stitch icon" width="20" height="20">
+                Definition individueller Ziele
+              </li>
+            </ul>
+            <a href="/kontakt.html" class="button-solid">Jetzt anfragen!</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+</main>
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<section id="footer-1390">
+  <div class="container">
+    <div class="top">
+      <a aria-label="go back to home" class="logo" href="">
+        <img class="logo-img" loading="lazy" decoding="async" src="/images/Originalfotos/logo-hell.png" alt="logo"
+          width="209" height="40">
+      </a>
+      <ul class="ul">
+        <li class="li">
+          <a href="/index.html" class="link">Home</a>
+        </li>
+        <li class="li">
+          <a href="/unterTeam.html" class="link">Unser Team</a>
+        </li>
+        <li class="li">
+          <a href="/leistungen.html" class="link">Leistungen</a>
+        <li class="li">
+          <a href="/kontakt.html" class="link">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <!--Social-->
+      <ul class="social">
+
+
+        <li class="social-li">
+          <a href="" class="social-link" aria-label="instagram" target="_blank" rel="noopener">
+            <img class="social-icon default" src="/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async"
+              width="12" height="12" aria-hidden="true">
+          </a>
+        </li>
+
+      </ul>
+      <span class="copyright">
+        © Copyright 2024 - <a href="" class="copyright-link">bitte-ein-byte</a>
+      </span>
+      <div class="flex">
+        <a href="/impressum.html" class="copyright-link">Impressum</a>
+        <span class="separater">|</span>
+        <a href="/impressum.html" class="copyright-link">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
+
+</body>
+
+</html>

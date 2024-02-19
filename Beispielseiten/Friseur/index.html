@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friseur</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="allg.css">
+</head>
+
+<body>
+
+  <!-- ============================================ -->
+  <!--                 Navigation                   -->
+  <!-- ============================================ -->
+
+  <header id="navigation">
+    <div class="top-bar">
+      <div class="top-container">
+        <div class="top-contact">
+          <a href="" class="top-link">
+            <img class="link-icon" src="/Beispielseiten/Friseur/img/icons/phone-grey.svg" alt="logo" width="16"
+              height="16" aria-hidden="true" decoding="async">
+            Telefon: +49 123 456 789
+          </a>
+          <a href="" class="top-link">
+            <img class="link-icon" src="/Beispielseiten/Friseur/img/icons/clock-grey.svg" alt="logo" width="20"
+              height="20" aria-hidden="true" decoding="async">
+            Öffnungszeiten: Mo - Sa: 8:00 - 20:00 Uhr
+          </a>
+        </div>
+        <div class="top-social">
+          <a href="" class="social-link">
+            <img class="social-icon" src="/Beispielseiten/Friseur/img/icons/face-grey.svg" alt="logo" width="12"
+              height="12" aria-hidden="true" decoding="async">
+          </a>
+
+          <a href="" class="social-link">
+            <img class="social-icon" src="/Beispielseiten/Friseur/img/icons/insta-grey.svg" alt="logo" width="12"
+              height="12" aria-hidden="true" decoding="async">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!--Nav Logo-->
+
+      <!--Navigation List-->
+      <nav class="nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="toggle" aria-label="mobile menu toggle">
+          <div class="box" aria-hidden="true">
+            <span class="line line1" aria-hidden="true"></span>
+            <span class="line line2" aria-hidden="true"></span>
+            <span class="line line3" aria-hidden="true"></span>
+          </div>
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="ul-wrapper">
+          <ul id="expanded" class="ul" aria-expanded="false">
+            <li class="li">
+              <a href="" class="li-link active">
+                Home
+              </a>
+            </li>
+            <li class="li">
+              <a href="" class="li-link">
+                Unser Team
+              </a>
+            </li>
+            <!--Copy and paste this dropdown list item and replace any .li with this dropdown group to make a new dropdown and it will work-->
+            <li class="li dropdown" tabindex="0">
+              <span class="li-link">
+                Service
+                <img class="drop-icon" src="/Beispielseiten/Friseur/img/icons/chev-down.svg" alt="dropdown icon"
+                  width="15" height="15" decoding="async" aria-hidden="true">
+              </span>
+              <ul class="drop-ul">
+                <li class="drop-li">
+                  <a href="" class="li-link drop-link">Schneiden</a>
+                </li>
+                <li class="drop-li">
+                  <a href="" class="li-link drop-link">Färben</a>
+                </li>
+                <li class="drop-li">
+                  <a href="" class="li-link drop-link">Beratung</a>
+                </li>
+              </ul>
+            </li>
+            <li class="li">
+              <a href="" class="li-link">
+                Produkte
+              </a>
+            </li>
+            <li class="li">
+              <a href="" class="li-link">
+                Preise
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a href="" class="button-solid nav-button">Kontakt</a>
+
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+
+  <section id="hero-219">
+    <div class="container">
+      <h1 class="title">Frisuersalon Elegant Cuts</h1>
+      <p class="text">
+        Entdecken Sie bei 'Elegant Cuts' die Kunst der Haarverwandlung, die Ihre Persönlichkeit zum Strahlen bringt.
+      </p>
+      <a href="" class="button-solid">Termin vereinbaren</a>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="background">
+      <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hero.jpg">
+      <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hero.jpg">
+      <img decoding="async" src="/Beispielseiten/Friseur/img/hero.jpg" alt="kitchen" width="2250" height="1500"
+        aria-hidden="true">
+    </picture>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                   Services                   -->
+  <!-- ============================================ -->
+
+  <section id="services-279">
+    <div class="container">
+      <div class="content">
+        <span class="topper">
+          Aktuelles Angebot</span>
+        <h2 class="title">Genießen Sie unsere Top-Leistungen</h2>
+        <p class="text">
+          Profitieren Sie jetzt von unseren aktuellen Angeboten! Gönnen Sie sich einen meisterhaften Haarschnitt, eine
+          individuelle Farbgestaltung oder eine professionelle Beratung - alles zu unschlagbaren Preisen!
+        </p>
+      </div>
+      <ul class="card-group">
+        <li class="item">
+          <picture class="picture">
+            <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/haarschnitt.jpg">
+            <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/haarschnitt.jpg">
+            <img loading="lazy" src="/Beispielseiten/Friseur/img/haarschnitt.jpg" alt="living room" width="348"
+              height="433" aria-hidden="true">
+          </picture>
+          <div class="box">
+            <h3 class="h3">Haarschnitte und Stylings</h3>
+            <a class="button-transparent" aria-label="read more about foyers" href="">Mehr erfahren</a>
+          </div>
+        </li>
+        <li class="item">
+          <picture class="picture">
+            <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/farbe.jpg">
+            <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/farbe.jpg">
+            <img loading="lazy" src="/Beispielseiten/Friseur/img/farbe.jpg" alt="living room" width="348" height="433"
+              aria-hidden="true">
+          </picture>
+          <div class="box">
+            <h3 class="h3">Farbgestaltung & Highlights</h3>
+            <a class="button-transparent" aria-label="read more about bathrooms" href="">Mehr erfahren</a>
+          </div>
+        </li>
+        <li class="item">
+          <picture class="picture">
+            <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/beratung.jpg">
+            <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/beratung.jpg">
+            <img loading="lazy" src="/Beispielseiten/Friseur/img/beratung.jpg" alt="living room" width="348"
+              height="433" aria-hidden="true">
+          </picture>
+          <div class="box">
+            <h3 class="h3">Haarpflege-Beratung</h3>
+            <a class="button-transparent" aria-label="read more about living rooms" href="">Mehr erfahren</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Content                     -->
+  <!-- ============================================ -->
+
+  <section id="content-1450">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Über uns</span>
+        <h2 class="title">Ihr Salon für zeitlose Eleganz</h2>
+        <p class="text">
+          Herzlich willkommen bei "Elegant Cuts"! Wir sind mehr als nur ein Friseursalon - wir sind Ihr Partner für
+          zeitlose Eleganz und individuellen Stil. Mit unserem erfahrenen Team von Haarprofis sind wir darauf
+          spezialisiert, perfekte Haarschnitte und Stylings zu kreieren, die Ihre Persönlichkeit unterstreichen und Ihre
+          natürliche Schönheit hervorheben. Von individuellen Farbgestaltungen und Highlights bis hin zu professioneller
+          Beratung für eine optimale Haarpflege - bei uns stehen Ihre Bedürfnisse und Wünsche im Mittelpunkt. Besuchen
+          Sie uns und erleben Sie, wie wir Ihre Haarträume wahr werden lassen!
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="RTsbs-952">
+    <div class="container">
+      <div class="image-group">
+        <!--Long Left Image-->
+        <picture class="picture picture1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair5.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair5.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair5.jpg" alt="hair salon" width="349"
+            height="590">
+        </picture>
+        <!--Top right image-->
+        <picture class="picture picture2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair6.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair6.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair6.jpg" alt="hair salon" width="281"
+            height="387">
+        </picture>
+        <!--Bottom right image-->
+        <picture class="picture picture3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair7.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair7.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair7.jpg" alt="hair salon" width="281"
+            height="280">
+        </picture>
+
+      </div>
+      <div class="content">
+        <span class="topper">Friseurbesuch</span>
+        <h2 class="title">Das Leben ist schöner mit dem richtigen Friseur</h2>
+        <p class="text">
+          Entdecken Sie die neuesten Trends in Sachen Frisuren und lassen Sie sich von unseren talentierten Stylisten
+          inspirieren. Egal, ob Sie nach einem eleganten Bob, lockeren Wellen oder einer kühnen Farbveränderung suchen,
+          wir stehen Ihnen mit Fachkenntnis und Kreativität zur Seite, um Ihren Traum-Look zu verwirklichen.
+        </p>
+        <div class="contact-group">
+          <a class="link" href="mailto:Info@health&wellness.com">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/pin-hair.svg"
+                alt=" icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Schicke uns eine Anfrage</span>
+              <span class="link-content">Info@hairstyle.com</span>
+            </div>
+          </a>
+          <a class="link" href="">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/mail-hair.svg"
+                alt="icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Besuche uns vor Ort</span>
+              <span class="link-content">Musterstadt, 1 Musterstr.</span>
+            </div>
+          </a>
+        </div>
+        <a href="" class="button-solid" aria-label="learn more about us">Jetzt Termin vereinbaren</a>
+      </div>
+    </div>
+    <!--Zen Leaf Group-->
+    <img class="floater" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair-tools.png"
+      alt="hair tools" alt="hair tools" width="445" height="310">
+  </section>
+
+  <!-- ============================================ -->
+  <!--             Side By Side Reverse             -->
+  <!-- ============================================ -->
+
+  <section id="RTsbsr-952">
+    <div class="container">
+      <div class="image-group">
+        <!--Long Left Image-->
+        <picture class="picture picture1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/prod1.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/prod1.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/prod1.jpg" alt="hair salon" width="349"
+            height="590">
+        </picture>
+        <!--Top right image-->
+        <picture class="picture picture2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/prod2.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/prod2.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/prod2.jpg" alt="hair salon" width="281"
+            height="387">
+        </picture>
+        <!--Bottom right image-->
+        <picture class="picture picture3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/prod3.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/prod3.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/prod3.jpg" alt="hair salon" width="281"
+            height="280">
+        </picture>
+        <img class="seal" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/seal.svg" alt="seal"
+          width="150" height="150">
+      </div>
+      <div class="content">
+        <span class="topper">Premium Produkte</span>
+        <h2 class="title">Für gesundes, strahlendes Haar</h2>
+        <p class="text">
+          Gesundes Haar ist das schönste Accessoire, das Sie tragen können. Erfahren Sie von unseren Experten die besten
+          Tipps und Tricks für die richtige Haarpflege zu Hause. Von der Auswahl der richtigen Produkte bis hin zu
+          professionellen Styling-Techniken - wir helfen Ihnen dabei, Ihr Haar zu pflegen und zu verwöhnen. <br>
+          Schauen Sie im Katalog unseres lizenzierten Pflegeprodukteherstellers nach und lassen Sie sich von uns direkt
+          beraten.
+        </p>
+        <div class="contact-group">
+          <a class="link" href="mailto:Info@health&wellness.com">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/pin-hair.svg"
+                alt="icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Vertriebspartner</span>
+              <span class="link-content">vertrieb@verkauf.com</span>
+            </div>
+          </a>
+          <a class="link" href="">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/mail-hair.svg"
+                alt="icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Regionale Produkte</span>
+              <span class="link-content">Musterstadt, 1 Musterstr.</span>
+            </div>
+          </a>
+        </div>
+        <a href="" class="button-solid" aria-label="learn more about us">Katalog Endecken</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================ -->
+  <!--             Side By Side Triplet             -->
+  <!-- ============================================ -->
+
+  <section id="RTsbst-952">
+    <div class="container">
+      <div class="image-group">
+        <!--Long Left Image-->
+        <picture class="picture picture1">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/wedding1.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/wedding1.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/wedding1.jpg" alt="hair salon"
+            width="349" height="590">
+        </picture>
+        <!--Top right image-->
+        <picture class="picture picture2">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/wedding2.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/wedding2.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/wedding2.jpg" alt="hair salon"
+            width="281" height="387">
+        </picture>
+        <!--Bottom right image-->
+        <picture class="picture picture3">
+          <!--Mobile Image-->
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/wedding3.jpg">
+          <!--Tablet and above Image-->
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/wedding3.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/wedding3.jpg" alt="hair salon"
+            width="281" height="280">
+        </picture>
+        <!--Seal-->
+
+      </div>
+      <div class="content">
+        <span class="topper">Hochzeitsfrisuren</span>
+        <h2 class="title">Lassen Sie sich für Ihren großen Tag verwöhnen</h2>
+        <p class="text">
+          Ihre Hochzeitstag soll perfekt sein, und dazu gehört auch eine traumhafte Frisur, die Ihr Outfit ergänzt.
+          Lassen Sie sich von unseren erfahrenen Hochzeitsfriseuren beraten und finden Sie die ideale Frisur, die Ihren
+          Stil und Ihre Persönlichkeit unterstreicht. Von romantischen Hochsteckfrisuren bis hin zu glamourösen Locken -
+          wir kümmern uns darum, dass Sie an Ihrem besonderen Tag strahlen. <br>Unsere Mia Nachname ist auf
+          Hochzeitfrisuren
+          spezialisiert und betreut Sie gerne an Ihrem Hochzeitstag!
+        </p>
+        <div class="contact-group">
+          <a class="link" href="mailto:Info@health&wellness.com">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/pin-hair.svg"
+                alt="icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Mia Nachname</span>
+              <span class="link-content">mia-nachname@hairsaloon.com</span>
+            </div>
+          </a>
+          <a class="link" href="">
+            <picture class="wrapper">
+              <img class="icon" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/icons/mail-hair.svg"
+                alt="icon" width="24" height="24">
+            </picture>
+            <div class="info">
+              <span class="header">Telefon</span>
+              <span class="link-content">+49 123 456 789</span>
+            </div>
+          </a>
+        </div>
+        <a href="" class="button-solid" aria-label="learn more about us">Gallerie Hochzeitsfrisuren</a>
+      </div>
+    </div>
+    <!--Zen Leaf Group-->
+    <img class="floater" loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair-tools.png"
+      alt="hair tools" width="445" height="310">
+  </section>
+
+
+
+  <!-- ============================================ -->
+  <!--                   Gallery                    -->
+  <!-- ============================================ -->
+
+  <section id="gallery-973">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Unser Portfolio</span>
+        <h2 class="title">Unser Salon im Kurzportrait</h2>
+        <p class="text">
+          Jedes Bild erzählt eine einzigartige Geschichte von Transformation und Schönheit. Von trendigen Looks bis hin
+          zu zeitlosen Klassikern: Ein Spiegelbild der Vielfalt und Raffinesse, die unser Salon bietet.
+          Wir laden Sie ein, sich von unserer Galerie inspirieren zu lassen und vielleicht sogar Ihren nächsten Look bei
+          uns zu finden. Vereinbaren Sie noch heute einen Termin und lassen Sie uns gemeinsam Ihre Haarträume wahr
+          werden lassen!
+        </p>
+      </div>
+      <div class="gallery">
+        <!--Picture 1-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair10.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair10.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair10.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 2-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair11.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair11.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair11.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 3-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair12.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair12.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair12.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 4-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair14.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair14.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair14.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 5-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair15.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair15.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair15.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 6-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair16.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair16.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair16.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 7-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair17.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair17.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair17.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+        <!--Picture 8-->
+        <picture class="image">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/hair13.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/hair13.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/hair13.jpg" alt="gallery" width="305"
+            height="400">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Pricing                     -->
+  <!-- ============================================ -->
+
+  <section id="pricing-975">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Preisgestaltung</span>
+        <h2 class="title">Alle Haardienstleistungen</h2>
+      </div>
+      <div class="menu">
+        <!--Left Menu-->
+        <ul class="menu-group">
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Lockenwickler oder Glätteisen Styling</span>
+              <span class="price">35€</span>
+            </h3>
+            <p class="menu-text">
+              Perfektes Styling für Locken oder glatte Haare.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Haarschnitt mit Föhnen
+              </span>
+              <span class="price">39€</span>
+            </h3>
+            <p class="menu-text">
+              Individueller Haarschnitt mit professionellem Finish.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Professionelles Styling für besondere Anlässe</span>
+              <span class="price">49€</span>
+            </h3>
+            <p class="menu-text">
+              Spezielles Styling für Ihre besonderen Momente.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Luxuriöse Spa-Haarpflegebehandlung
+              </span>
+              <span class="price">59€</span>
+            </h3>
+            <p class="menu-text">
+              Verwöhnende Pflege für Ihr Haar.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Haarverlängerungen für voluminöse Mähnen</span>
+              <span class="price">99€</span>
+            </h3>
+            <p class="menu-text">
+              Traumhaft lange Haare für einen glamourösen Look.
+            </p>
+          </li>
+        </ul>
+        <!--Right Menu-->
+        <ul class="menu-group">
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Haar- und Kopfhautanalyse mit Pflegeberatung</span>
+              <span class="price">10€</span>
+            </h3>
+            <p class="menu-text">
+              Gründliche Analyse und individuelle Pflegeempfehlungen.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Express-Styling für Kurzhaarfrisuren
+              </span>
+              <span class="price">15€</span>
+            </h3>
+            <p class="menu-text">
+              Schnelles Styling für kurze Haare.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Haarspülung und tiefenwirksame Pflegebehandlung</span>
+              <span class="price">30€</span>
+            </h3>
+            <p class="menu-text">
+              Intensive Pflege für Glanz und Geschmeidigkeit.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Haarfarbberatung und individuelle Farbgestaltung</span>
+              <span class="price">90€</span>
+            </h3>
+            <p class="menu-text">
+              Expertenberatung für die perfekte Haarfarbe.
+            </p>
+          </li>
+          <li class="menu-item">
+            <h3 class="h3">
+              <span class="header">Männer-Haarschnitt mit Deluxe-Rasierbehandlung </span>
+              <span class="price">40€</span>
+            </h3>
+            <p class="menu-text">
+              Maßgeschneiderter Haarschnitt und Rasur.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Reviews                     -->
+  <!-- ============================================ -->
+
+  <section id="reviews-990">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Rezensionen</span>
+        <h2 class="title">Kundenfeedback über unseren Service</h2>
+      </div>
+      <ul class="card-group">
+        <li class="item">
+          <picture class="picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/ref1.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/ref1.jpg">
+            <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/ref1.jpg" alt="person" width="240"
+              height="300">
+          </picture>
+          <div class="flex">
+            <span class="name">Maximila Muster</span>
+            <span class="desc">Luxuriöse Spa-Haarpflegebehandlung</span>
+            <p class="item-text">
+              Die luxuriöse Spa-Haarpflegebehandlung verdient ohne Zweifel eine 5/5-Bewertung! Meine Haare fühlen sich
+              jetzt seidig und glänzend
+              an, und die entspannende Kopfmassage war einfach himmlisch. Ich kann diese Behandlung jedem empfehlen, der
+              sich etwas Besonderes gönnen möchte.
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <picture class="picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/Beispielseiten/Friseur/img/ref2.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/Beispielseiten/Friseur/img/ref2.jpg">
+            <img loading="lazy" decoding="async" src="/Beispielseiten/Friseur/img/ref2.jpg" alt="person" width="240"
+              height="300">
+          </picture>
+          <div class="flex">
+            <span class="name">Lisa Müller</span>
+            <span class="desc">Haarfarbberatung und individuelle Farbgestaltung</span>
+            <p class="item-text">
+              Das Team war äußerst kompetent und hat sich viel Zeit genommen, um meine Wünsche zu verstehen und die
+              perfekte Farbe für mich zu finden. Die Ergebnisse waren absolut fantastisch - die Farbe passt perfekt zu
+              meinem Teint und meinem Stil. Ich fühle mich jetzt selbstbewusster und strahlender denn je! Ich kann es
+              jedem empfehlen, der eine individuelle und professionelle Haarfärbung sucht.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- ============================================ -->
+  <!--                   Footer                     -->
+  <!-- ============================================ -->
+
+  <footer id="footer-1292">
+    <div class="container">
+      <!-- Logo Group -->
+      <div class="logo-group">
+
+        <p class="text">
+          Dies ist eine Beispielseite von bitte-ein-byte.com,
+          ausschließlich zu Demonstrationszwecken, ohne weiteren inhaltlichen Nutzen.
+        </p>
+        <a href="mailto:info@mail.com" class="link">
+          <img class="link-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Friseur/img/icons/construction-mail.svg" alt="icon" width="24" height="24">
+          hi@test.com
+        </a>
+      </div>
+      <!-- Links -->
+      <ul class="nav">
+        <li class="nav-li">
+          <span class="header">Services</span>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Haarschnitte und Stylings</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Farbgestaltung & Highlights</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Haarpflege-Beratung</a>
+        </li>
+
+      </ul>
+      <ul class="nav">
+        <li class="nav-li">
+          <span class="header">About</span>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Unsere Stylisten</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Haar-Award 2029</a>
+        </li>
+
+      </ul>
+      <ul class="nav">
+        <li class="nav-li">
+          <span class="header">Kontakt</span>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Facebook</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-link" href="">Instagram</a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class="bottom">
+      <span class="copyright">© Copyright 2023 -
+        <a class="copyright-link" href=""> bitte-ein-byte.com</a>
+        All Right Reserved.
+      </span>
+      <a href="" class="copyright-link">Terms of Service</a>
+      <a href="" class="copyright-link">Privacy Policy</a>
+    </div>
+    <!--Floating Cirlces-->
+    <div class="floater" aria-hidden="true"></div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
