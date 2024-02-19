@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="allg.css">
+  <title>Gartenpflege</title>
+</head>
+
+<body>
+  <!-- ============================================ -->
+  <!--                 Navigation                   -->
+  <!-- ============================================ -->
+
+  <header id="navigation">
+    <div class="container">
+      <!--Nav Logo-->
+
+      <!--Navigation List-->
+      <nav class="nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="toggle" aria-label="mobile menu toggle">
+          <div class="box" aria-hidden="true">
+            <span class="line line1" aria-hidden="true"></span>
+            <span class="line line2" aria-hidden="true"></span>
+            <span class="line line3" aria-hidden="true"></span>
+          </div>
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="ul-wrapper">
+          <ul id="expanded" class="ul" aria-expanded="false">
+            <li class="li">
+              <a href="" class="li-link active">
+                Start
+              </a>
+            </li>
+            <li class="li">
+              <a href="" class="li-link">
+                Über Uns
+              </a>
+            </li>
+            <li class="li">
+              <a href="" class="li-link">
+                Unsere Leistungen
+              </a>
+            </li>
+
+            <li class="li">
+              <a href="" class="li-link">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a href="" class="button-solid nav-button">Kontakt</a>
+    </div>
+  </header>
+
+
+  <!-- ============================================ -->
+  <!--                   Hero                       -->
+  <!-- ============================================ -->
+
+  <section id="hero-408">
+    <div class="container">
+      <div class="content">
+        <h2 class="title"><span class="color">Gartenpflege</span>Schmidtkowski</h2>
+        <p class="text">
+          Effektive Gartenpflege für gesunde Pflanzen: jäten, gießen, schneiden und düngen für optimales Wachstum.
+        </p>
+        <a href="" class="button-solid">Unser Service</a>
+        <a href="" class="button-transparent">Kontakt</a>
+        <span class="header">Unsere Großhandelkunden:</span>
+        <div class="logo-group">
+          <!--Logo 1-->
+          <img class="logo" src="/Beispielseiten/Garten-Landschaft/icon/logo1.svg" alt="logo" width="113" height="31"
+            decoding="async">
+          <!--Logo 2-->
+          <img class="logo" src="/Beispielseiten/Garten-Landschaft/icon/logo2.svg" alt="logo" width="113" height="40"
+            decoding="async">
+          <!--Logo 3-->
+          <img class="logo" src="/Beispielseiten/Garten-Landschaft/icon/logo3.svg" alt="logo" width="113" height="30"
+            decoding="async">
+          <!--Logo 4-->
+          <img class="logo" src="/Beispielseiten/Garten-Landschaft/icon/logo4.svg" alt="logo" width="113" height="37"
+            decoding="async">
+        </div>
+      </div>
+      <div class="stat-group">
+        <picture class="background">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Garten-Landschaft/img/leaves.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Garten-Landschaft/img/leaves.jpg">
+          <img loading="lazy" decoding="async" src="/Beispielseiten/Garten-Landschaft/img/leaves.jpg" alt="leaves"
+            width="842" height="737" aria-hidden="true">
+        </picture>
+        <div class="stat-box">
+          <span class="stat">
+            263
+            <span class="desc">Begrünte Gärten</span>
+          </span>
+        </div>
+        <div class="stat-box">
+          <span class="stat">
+            4,8/5
+            <span class="desc">Google Rating</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Services                    -->
+  <!-- ============================================ -->
+
+  <section id="services-468">
+    <div class="container">
+      <ul class="card-group">
+        <li class="item">
+          <img class="icon" aria-hidden="true" src="/Beispielseiten/Garten-Landschaft/icon/geen1.svg" loading="lazy"
+            decoding="async" alt="icon" width="90" height="90">
+          <h3 class="h3">Baumfällarbeiten </h3>
+        </li>
+        <li class="item">
+          <img class="icon" aria-hidden="true" src="/Beispielseiten/Garten-Landschaft/icon/green2.svg" loading="lazy"
+            decoding="async" alt="icon" width="90" height="90">
+          <h3 class="h3">Abtransport</h3>
+        </li>
+        <li class="item">
+          <img class="icon" aria-hidden="true" src="/Beispielseiten/Garten-Landschaft/icon/green3.svg" loading="lazy"
+            decoding="async" alt="icon" width="90" height="90">
+          <h3 class="h3">Modernisierungen</h3>
+        </li>
+        <li class="item">
+          <img class="icon" aria-hidden="true" src="/Beispielseiten/Garten-Landschaft/icon/green4.svg" loading="lazy"
+            decoding="async" alt="icon" width="90" height="90">
+          <h3 class="h3">Beratung</h3>
+        </li>
+        <li class="item">
+          <img class="icon" aria-hidden="true" src="/Beispielseiten/Garten-Landschaft/icon/green5.svg" loading="lazy"
+            decoding="async" alt="icon" width="90" height="90">
+          <h3 class="h3">Regelmäßige Pflege</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="RPsbs-414">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Wir stellen uns vor</span>
+        <h2 class="title">Über unser Unternehmen</h2>
+        <p class="text">
+          Wir sind Ihr vertrauenswürdiger Partner für professionelle Gartenpflege. Mit unserem erfahrenen Team und
+          unserem Engagement für Qualität sorgen wir für die Schönheit und Gesundheit Ihres Gartens. Unser Team besteht
+          aus erfahrenen Fachleuten, die nicht nur über das nötige Know-how verfügen, sondern auch mit Hingabe und
+          Sorgfalt arbeiten. Wir verstehen die individuellen Bedürfnisse jedes Gartens und jedes Kunden und passen
+          unsere Dienstleistungen entsprechend an.
+        </p>
+        <a href="" class="button-solid">Mehr erfahren</a>
+      </div>
+      <div class="image-group">
+        <!--Top Left Image-->
+        <picture class="picture picture1">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping1.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping1.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/landscaping1.jpg" alt="backyard" width="229" height="352">
+        </picture>
+        <!--Top Right Image-->
+        <picture class="picture picture2">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping2.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping2.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/landscaping3.jpg" alt="backyard" width="390" height="352">
+        </picture>
+        <!--Bottom Image-->
+        <picture class="picture picture3">
+          <source media="(max-width: 600px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping3.jpg">
+          <source media="(min-width: 601px)" srcset="/Beispielseiten/Garten-Landschaft/img/landscaping3.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/landscaping3.jpg" alt="backyard" width="649" height="227">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--            Side By Side Reverse              -->
+  <!-- ============================================ -->
+
+  <section id="RPsbsr-414">
+    <div class="container">
+      <div class="content">
+        <span class="topper">Wir sind stolzer Meisterbetrieb</span>
+        <h2 class="title">Handwerk mit fachgerechter Expertiese</h2>
+        <p class="text">
+          Unsere umfassenden Leistungen werden von einem Meisterbetrieb ausgeführt, der alle erforderlichen
+          Qualifikationen und Zertifikate vorweisen kann. Mit unserem erfahrenen Team und unserem Engagement für höchste
+          Qualität bieten wir Ihnen eine breite Palette an professionellen Gartenpflegedienstleistungen. Von der
+          Rasenpflege über die Baumpflege bis hin zur Landschaftsgestaltung stehen wir Ihnen mit Fachwissen und
+          Leidenschaft zur Seite. Vertrauen Sie auf unsere Kompetenz und lassen Sie uns gemeinsam Ihren Garten in eine
+          grüne Oase verwandeln.
+        </p>
+        <a href="" class="button-solid">Unsere Leistungen</a>
+      </div>
+      <div class="image-group">
+        <!--Top Left Image-->
+        <picture class="picture picture1">
+          <source media="(max-width: 600px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-karolina-grabowska-4205983.jpg">
+          <source media="(min-width: 601px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-karolina-grabowska-4205983.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/pexels-karolina-grabowska-4205983.jpg" alt="backyard" width="229"
+            height="352">
+        </picture>
+        <!--Top Right Image-->
+        <picture class="picture picture2">
+          <source media="(max-width: 600px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-jimmy-chan-2310483.jpg">
+          <source media="(min-width: 601px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-jimmy-chan-2310483.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/pexels-jimmy-chan-2310483.jpg" alt="backyard" width="390"
+            height="352">
+        </picture>
+        <!--Bottom Image-->
+        <picture class="picture picture3">
+          <source media="(max-width: 600px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-anna-shvets-5230933.jpg">
+          <source media="(min-width: 601px)"
+            srcset="/Beispielseiten/Garten-Landschaft/img/pexels-anna-shvets-5230933.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async"
+            src="/Beispielseiten/Garten-Landschaft/img/pexels-anna-shvets-5230933.jpg" alt="backyard" width="649"
+            height="227">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Why Choose                   -->
+  <!-- ============================================ -->
+
+  <section id="why-choose-441">
+    <div class="container">
+      <span class="topper">Spitzenklasse für sich</span>
+      <h2 class="title">Ihr richtiger Ansprechpartner</h2>
+      <p class="text">
+        Unsere Leidenschaft für unsere Passion spiegelt sich auch in unserer Kundenzufriedenheit wieder. Wir gehen auf
+        alle Wünsche ein und beraten Sie vor Ort fachgerecht und kompetent, damit nicht nur Ihr Garten, sondern auch Ihr
+        Portmonee blühen kann!
+      </p>
+      <ul class="card-group">
+        <li class="item">
+          <a href="" class="link">
+            <picture class="picture" aria-hidden="true">
+              <img class="icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon1.svg" loading="lazy"
+                decoding="async" alt="icon" width="40" height="40">
+            </picture>
+            <span class="number">263</span>
+            <p class="item-p">
+              Glückliche Familien im neu angelegten Garten
+            </p>
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <picture class="picture" aria-hidden="true">
+              <img class="icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon2.svg" loading="lazy"
+                decoding="async" alt="icon" width="40" height="40">
+            </picture>
+            <span class="number">18</span>
+            <p class="item-p">
+              Wertsteigerungen beim Immobilienverkauf
+            </p>
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <picture class="picture" aria-hidden="true">
+              <img class="icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Why-Choose/icon3.svg" loading="lazy"
+                decoding="async" alt="icon" width="40" height="40">
+            </picture>
+            <span class="number">24</span>
+            <p class="item-p">
+              Großanlagen in regelmäßiger Pflege
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                    FAQ                       -->
+  <!-- ============================================ -->
+
+  <section id="faq-254">
+    <div class="container">
+      <div class="content">
+        <span class="topper">FAQ’s</span>
+        <h2 class="title">Häufig gestellte Fragen</h2>
+        <p class="text">
+          Antworten auf Ihre Fragen zur Gartenpflege: Finden Sie hier klare und hilfreiche Informationen.
+        </p>
+      </div>
+      <div class="flex-group">
+        <ul class="faq-group">
+          <!-- Active class added as default -->
+          <li class="faq-item active">
+            <button class="button">Was beeinhaltet Ihr Service "Gartenpflege"?</button>
+            <p class="item-p">
+              Unser Service "Gartenpflege" umfasst eine breite Palette an Leistungen, darunter Rasenmähen,
+              Unkrautbekämpfung, Pflanzenpflege, Baumschnitt, Bewässerung, und vieles mehr.
+              Dieser Service ist je nach Gartenauslegung unterschiedlich und dementsprechend in regelmäßigen oder
+              einmaligen Pflegeterminen vereinbar. <br> Bei unverbindlicher Erstbegehung beraten wir Sie gerne
+              kostenfrei.
+            </p>
+          </li>
+          <li class="faq-item">
+            <button class="button">Warum sollte ich einen Meisterbetrieb buchen?</button>
+            <p class="item-p">
+              Als Meisterbetrieb garantieren wir Ihnen nicht nur höchste Qualität und Fachkompetenz, sondern auch die
+              Gewissheit, dass Ihr Garten von geschulten und erfahrenen Fachleuten gepflegt wird. Unsere umfangreichen
+              Qualifikationen, einschließlich der erforderlichen Kettensägen- und Baumklettererscheine, stellen sicher,
+              dass Ihre Gartenpflege professionell, sicher und nachhaltig durchgeführt wird. Mit uns als Meisterbetrieb
+              erhalten Sie einen zuverlässigen Partner, der Ihre Gartenbedürfnisse mit höchstem Engagement und
+              Fachwissen erfüllt.
+            </p>
+          </li>
+          <li class="faq-item">
+            <button class="button">Wie viel kostet Ihr Service?</button>
+            <p class="item-p">
+              Grundsätzlich gilt: Kein Gartenlandschaftsbau-Auftrag ohne sauberern Kostenvoranschlag. <br>Sprich: vor
+              der
+              Umsetzung Ihres neuen Gartens bekommen Sie transparent alle Preise aufgeschlüsselt vorgelegt. <br><br> Bei
+              der regelmäßigen Pflege beanschlagen wir 40€/Stunde. Bei Großflächen oder auch Betriebsflächen können
+              gerne Fixpreise nach Pflegebedarf vereinbart werden.
+            </p>
+          </li>
+          <li class="faq-item">
+            <button class="button">Wie bekämpfen Sie Schädlinge und Unkräuter?</button>
+            <p class="item-p">
+              Ja, wir verfügen über umfassende Erfahrung in der Schädlingsbekämpfung und Unkrautentfernung. Dabei setzen
+              wir ausschließlich auf bio-zertifizierte Bekämpfer, die keine chemischen Gefährdungen für die Umgebung
+              darstellen und sicher für Mensch, Tier und Natur sind.
+            </p>
+          </li>
+          <li class="faq-item">
+            <button class="button">Was passiert nach dem Anlegen meines Gartens?</button>
+            <p class="item-p">
+              Nachdem Ihr Garten angelegt wurde, kennzeichnen wir sämtliche verpflanzte Blumen für eine einfache
+              Identifizierung. Zusätzlich erhalten Sie Zugang zu unserer empfohlenen Pflanzen-App, über die Sie
+              detaillierte Pflegetipps für jede Blume erhalten. So können Sie sicherstellen, dass Ihr Garten auch
+              langfristig gesund und schön bleibt. Sprechen Sie uns gerne für ein Pflegepaket an!
+            </p>
+          </li>
+        </ul>
+        <div class="cta">
+          <h3 class="h3">Ist Ihre gesuchte Antwort nicht dabei?</h3>
+          <p class="cta-p">
+            Kein Problem. Hinterlassen Sie einfach eine Nachricht, und wir melden uns so schnell wie möglich bei Ihnen.
+          </p>
+          <a href="" class="button-solid">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                   Footer                     -->
+  <!-- ============================================ -->
+
+  <section id="footer-710">
+    <div class="container">
+      <!--Top Section-->
+      <div class="top">
+        <!--Warpped logo in wrapper div so that div can be 100% width to force the lists below it to stay in their line.  The logo can maintain its' max width. we didn't want it 100% width becuase then the blank area to the right of the logo will also result in a click and hover event. -->
+        <div class="logo-wrapper">
+
+        </div>
+        <ul class="ul">
+          <li class="li">
+            <span class="header">Nebenseiten</span>
+          </li>
+          <li class="li">
+            <a href="" class="link">Über uns</a>
+          </li>
+          <li class="li">
+            <a href="" class="link">Unsere Leistungen</a>
+          </li>
+          <li class="li">
+            <a href="" class="link">FAQ</a>
+          </li>
+        </ul>
+        <ul class="ul">
+          <li class="li">
+            <span class="header">Informative Beiträge</span>
+          </li>
+          <li class="li">
+            <a href="" class="link">Gestaltungsideen für kleine Gärten</a>
+          </li>
+          <li class="li">
+            <a href="" class="link">Pflanzenauswahl und -pflege</a>
+          </li>
+          <li class="li">
+            <a href="" class="link">Bewässerungssysteminstallation</a>
+          </li>
+          <li class="li">
+            <a href="" class="link">Nachhaltiger Gartenbau</a>
+          </li>
+        </ul>
+        <ul class="ul contact-ul">
+          <li class="li">
+            <span class="header">Kontakt</span>
+          </li>
+          <li class="li">
+            <a href="tel:555-456 7899" class="link">
+              <img class="icon" src="/Beispielseiten/Garten-Landschaft/icon/Icons_phone-stroke.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+              +49 123 456 789
+            </a>
+          </li>
+          <li class="li">
+            <a href="mailto:info@example.com" class="link">
+              <img class="icon" src="/Beispielseiten/Garten-Landschaft/icon/mail-stroke.svg" alt="icon" loading="lazy"
+                decoding="async" width="24" height="24" aria-hidden="true">
+              info@email.com
+            </a>
+          </li>
+          <li class="li">
+            <a href="" class="link" target="_blank" rel="noopener">
+              <img class="icon" src="/Beispielseiten/Garten-Landschaft/icon/pin-stroke.svg" alt="icon" loading="lazy"
+                decoding="async" width="24" height="24" aria-hidden="true">
+              1234 Musterstadt, Musterstr. 123, NRW
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--Middle Section-->
+      <div class="middle">
+        <!--Navigation-->
+        <p>
+          Dies ist eine Beispielseite von bitte-ein-byte.com, <br> ausschließlich zu Demonstrationszwecken, ohne
+          weiteren inhaltlichen Nutzen.
+        </p>
+        <!--Social-->
+        <ul class="social">
+          <li class="social-li">
+            <a href="" class="social-link" aria-label="" target="_blank" rel="noopener">
+              <!--Default Icon-->
+              <img class="social-icon default" src="/Beispielseiten/Garten-Landschaft/icon/facebook.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+              <!--On Hover Icon-->
+              <img class="social-icon hover" src="/Beispielseiten/Garten-Landschaft/icon/Icons_facebook-green.svg"
+                alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="social-link" aria-label="" target="_blank" rel="noopener">
+              <!--Default Icon-->
+              <img class="social-icon default" src="/Beispielseiten/Garten-Landschaft/icon/twitter.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+              <!--On Hover Icon-->
+              <img class="social-icon hover" src="/Beispielseiten/Garten-Landschaft/icon/twitter-green.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="social-link" aria-label="" target="_blank" rel="noopener">
+              <!--Default Icon-->
+              <img class="social-icon default" src="/Beispielseiten/Garten-Landschaft/icon/instagram.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+              <!--On Hover Icon-->
+              <img class="social-icon hover" src="/Beispielseiten/Garten-Landschaft/icon/instagram-green2.svg"
+                alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+            </a>
+          </li>
+          <li class="social-li">
+            <a href="" class="social-link" aria-label="" target="_blank" rel="noopener">
+              <!--Default Icon-->
+              <img class="social-icon default" src="/Beispielseiten/Garten-Landschaft/icon/youtube.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+              <!--On Hover Icon-->
+              <img class="social-icon hover" src="/Beispielseiten/Garten-Landschaft/icon/youtube-green.svg" alt="icon"
+                loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--Bottom Section-->
+      <div class="bottom">
+        <span class="copyright">
+          © Copyright 2023 - <a href="" class="copyright-link" target="_blank" rel="noopener">bitte-ein-byte.com</a>
+        </span>
+      </div>
+    </div>
+    <!--SVG Waves-->
+    <img class="graphic" src="/Beispielseiten/Garten-Landschaft/icon/Icons_footer-waves.svg" alt="waves"
+      aria-hidden="true" loading="lazy" decoding="async" width="1920" height="616">
+  </section>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="faq.js"></script>
+
+</body>
+
+</html>
